@@ -8,3 +8,5 @@ diet_proportions.R computes prey taxa frequencies in the stomachs (%F) and their
 
 The [original version](https://stackoverflow.com/questions/68095243/piedonut-how-to-change-color-of-pie-and-donut) of the pie_donut_full function that plots the pie-donut graphs was posted on stackoverflow by Amélie Gourdon-Kanhukamwe. It was adapted here to maintain the colors of prey taxonomic categories across plots.
 
+## Modified Costello graph
+
