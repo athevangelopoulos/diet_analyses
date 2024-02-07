@@ -1,7 +1,7 @@
-#This script computes and exports proportion indices with piedonut plots
+#This script computes and exports indices for stomach contents proportions and relative importance by prey taxon and taxonomic category. It also produces the related piedonut plots for visualization.
 
 prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # colors for prey groups
-prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.")
+prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # names for prey groups
 
 source("pie_donut_full.R")
 
