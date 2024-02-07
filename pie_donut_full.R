@@ -96,8 +96,8 @@ pie_donut_full <-
     df
     # print(nrow(df))
     # mainCol = RColorBrewer::brewer.pal(nrow(df), name = palette_name)
-    mainColmain = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # colors for prey groups
-    names(mainColmain) = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # the prey groups
+    mainColmain = prey_group_colours
+    names(mainColmain) = prey_group_names
     # print(mainColmain)
     # print(c(unique(piedonut_IRI_df$prey_group)))
     mainCol = mainColmain[c(unique(piedonut_IRI_df$prey_group))] # set the name of the dataframe

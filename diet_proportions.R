@@ -1,14 +1,15 @@
 #This script computes and exports proportion indices with piedonut plots
 
+prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # colors for prey groups
+prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.")
+
 source("pie_donut_full.R")
 
 library(gdata)
 library(dplyr)
-library("tidyr")
+library(tidyr)
 library(ggplot2)
 library(webr)
-
-pal <- "Spectral"
 
 res <- 800
 h <- 15
@@ -53,6 +54,8 @@ indices_df$IRI <-
 IRI_sum <- sum(indices_df$IRI)
 indices_df$IRI_pc <- (indices_df$IRI * 100) / IRI_sum
 
+write.csv(indices_df, "indices.csv")
+
 # PieDonut plots
 
 # # %N plot
@@ -93,12 +96,11 @@ pie_donut_full(
   labelposition = 1,
   showPieName = F,
   showDonutName = F,
-  title = "IRI",
+  title = "%IRI",
   showRatioThreshold = 0.01,
   ratioByGroup = F,
   showRatioDonut = F,
-  showRatioPie = F,
-  palette_name = pal
+  showRatioPie = F
 )
 dev.off()
       
