@@ -10,7 +10,7 @@ h <- 15
 w <- 20
 units <- "cm"
 
-#Produce data frame with unique prey taxa and their groups
+#Produce a data frame with unique prey taxa and their groups
 taxonomy <- select(data, prey, prey_group)
 taxonomy <- distinct(taxonomy)
 taxonomy <- trim(taxonomy)
