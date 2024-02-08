@@ -11,6 +11,14 @@ library(tidyr)
 library(ggplot2)
 library(webr)
 
+# load packages for the pie_donut_full() function
+library(dplyr)
+library(ggforce)
+library(moonBook)
+library(patchwork)
+library(scales)
+
+
 res <- 800
 h <- 15
 w <- 15
