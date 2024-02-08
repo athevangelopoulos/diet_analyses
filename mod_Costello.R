@@ -18,7 +18,11 @@ data <-read.csv("data.csv")
 #%F
 full <- length(unique(data$stomach_id))
 F_df <- as.data.frame(table(data['prey']))
+<<<<<<< HEAD
 F_df$F_pc <- F_df$Freq / full # F in proportion units
+=======
+F_df$F_pc <- F_df$Freq / full # F in proportion
+>>>>>>> c5f128c536f977e4bb0e1baf59783826a528ce31
 
 res <- data.frame(prey = c(),
                   Pi = c())
