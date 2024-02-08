@@ -1,37 +1,41 @@
-#This script computes and exports indices for stomach contents proportions and relative importance by prey taxon and taxonomic category. It also produces the related piedonut plots for visualization.
+#This script computes and exports indices for prey proportions in stomach contents and their relative importance by prey taxon and taxonomic category. It also produces piedonut plots for visualization. Indices values and plots are exported as .csv and .png files, respectively.
 
-prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # colors for prey groups
-prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # names for prey groups
+# LOAD PACKAGES AND SET PARAMETERS
 
-source("pie_donut_full.R")
-
+#Load required libraries
 library(gdata)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
-library(webr)
-
-# load packages for the pie_donut_full() function
-library(dplyr)
 library(ggforce)
 library(moonBook)
 library(patchwork)
 library(scales)
 
+source("pie_donut_full.R") # Load the pie_donut_full() function
 
+# Set .png file parameters
 res <- 800
 h <- 15
 w <- 15
 units <- "cm"
 
-data <-read.csv("data.csv")
+# Define a named vector of prey groups and their colors
+prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # Set desired colors for the prey groups
+prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # Set the names for the prey groups as they are defined in the data
+
+# IMPORT AND PREPARE DATA
+
+data <-read.csv("data.csv") # Import diet data
 data <- trim(data)
 
-#All taxonomy
+#Produce data frame with unique prey taxa and their groups
 taxonomy_df <- select(data, prey, prey_group)
 taxonomy_df <- distinct(taxonomy_df)
 
-stomachs <- length(unique(data$stomach_id))
+stomachs <- length(unique(data$stomach_id)) # Compute number of unique stomachs
+
+# COMPUTE INDICES
 
 #%F
 F_df <- as.data.frame(table(data['prey']))
@@ -62,9 +66,9 @@ indices_df$IRI <-
 IRI_sum <- sum(indices_df$IRI)
 indices_df$IRI_pc <- (indices_df$IRI * 100) / IRI_sum
 
-write.csv(indices_df, "indices.csv")
+write.csv(indices_df, "indices.csv") # Export index values in a .csv file
 
-# PieDonut plots
+# PRODUCE PIE-DONUT PLOTS FOR %N, %W and %IRI
 
 # # %N plot
 # piedonut_N_df <- merge(taxonomy_df, N_df, by = "prey", all.y = T)
