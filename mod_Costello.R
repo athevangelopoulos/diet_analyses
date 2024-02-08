@@ -1,5 +1,7 @@
 #This script plots modified Costello graphs for species diet data
 
+# LOAD LIBRARIES AND SET PARAMETERS
+
 library(gdata)
 library(dplyr)
 library(ggplot2)
@@ -10,6 +12,11 @@ h <- 15
 w <- 20
 units <- "cm"
 
+<<<<<<< HEAD
+=======
+# IMPORT DATA
+
+>>>>>>> f670d4688a7210c4635d04e2c06808b38c538b8f
 data <-read.csv("data.csv")
 
 #Produce a data frame with unique prey taxa and their groups
@@ -17,6 +24,11 @@ taxonomy <- select(data, prey, prey_group)
 taxonomy <- distinct(taxonomy)
 taxonomy <- trim(taxonomy)
 
+<<<<<<< HEAD
+=======
+# CALCULATE %F AND Pi
+
+>>>>>>> f670d4688a7210c4635d04e2c06808b38c538b8f
 #%F
 full <- length(unique(data$stomach_id))
 F_df <- as.data.frame(table(data['prey']))
@@ -51,6 +63,8 @@ for(i in preys){
 costello_mod <- merge(F_df, res, by = "prey")
 costello_mod <- costello_mod[,c(1, 3, 4)]
 costello_mod <- merge(costello_mod, taxonomy, by = "prey", all.x = T)
+
+# PRODUCE AND EXPORT THE GRAPH
 
 png(
   "mod_Costello.png",
