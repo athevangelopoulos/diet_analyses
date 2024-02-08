@@ -21,6 +21,7 @@ mod_Costello.R produces and exports in a .png file the modified Costello plot fo
 
 ## References
 Amundsen, P.-A., Gabler, H.-M., Staldvik, F.J. (1996) A new method for graphical analysis of feeding strategy from stomach contents data. J. Fish Biol. 48: 607–614.
+
 Hyslop, J. (1980) Stomach content analysis: a review of methods and their application. J. Fish Biol. 17: 411−429.
 
 
