@@ -16,7 +16,7 @@ Definition of the pie_donut_full() function that plots the pie-donut graphs. It 
 
 ## Modified Costello graph
 
-The Costello graph as modified by Amudsen et al. (1996) plots prey-specific abundance of prey taxa against their frequency of occurrence in the stomachs with food contents.
+The Costello graph as modified by Amudsen et al. (1996) plots prey-specific abundance of prey taxa against their frequency of occurrence in the stomachs with food contents. The method assesses simultaneously the prey importance, the feeding strategy, and the inter- and intra-individual components of trophic niche width. This information is obtained by the examination of the distribution of the points representing prey categories in the produced plots across the bottom left-top right diagonal (rare vs. dominant prey categories), top-bottom axis (specialization vs. generalization in the diet), and top left-top right axis (specialization at the individual vs. at the population level).
 
 ### mod_Costello.R
 
