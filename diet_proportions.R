@@ -23,7 +23,7 @@ units <- "cm"
 
 # Define a named vector of prey groups and their colors
 prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # Set desired colors for the prey groups
-prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # Set the names for the prey groups as they are defined in the data
+prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crustacea") # Set the names for the prey groups as they are defined in the data
 
 threshold <- 0.01 # Set a threshold prey taxon proportion value for showing labels in the pie-donut plots
 
