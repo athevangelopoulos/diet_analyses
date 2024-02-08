@@ -25,6 +25,8 @@ units <- "cm"
 prey_group_colours = c("#3288BD", "#99D594", "#FEE08B","#F46D43") # Set desired colors for the prey groups
 prey_group_names = c("Teleostei", "Cephalopoda", "Decapoda", "Other Crust.") # Set the names for the prey groups as they are defined in the data
 
+threshold <- 0.01 # Set a threshold proportion value for showing labels in the pie-donut plots
+
 # IMPORT AND PREPARE DATA
 
 data <-read.csv("data.csv") # Import diet data
@@ -89,7 +91,7 @@ pie_donut_full(
   showPieName = F,
   showDonutName = F,
   title = "%N",
-  showRatioThreshold = 0.01,
+  showRatioThreshold = threshold,
   ratioByGroup = F,
   showRatioDonut = F,
   showRatioPie = F
@@ -116,7 +118,7 @@ pie_donut_full(
   showPieName = F,
   showDonutName = F,
   title = "%W",
-  showRatioThreshold = 0.01,
+  showRatioThreshold = threshold,
   ratioByGroup = F,
   showRatioDonut = F,
   showRatioPie = F
@@ -144,7 +146,7 @@ pie_donut_full(
   showPieName = F,
   showDonutName = F,
   title = "%IRI",
-  showRatioThreshold = 0.01,
+  showRatioThreshold = threshold,
   ratioByGroup = F,
   showRatioDonut = F,
   showRatioPie = F
