@@ -100,11 +100,7 @@ pie_donut_full <-
     names(mainColmain) = prey_group_names
     # print(mainColmain)
     # print(c(unique(piedonut_IRI_df$prey_group)))
-<<<<<<< HEAD
     mainCol = mainColmain[c(unique(data$prey_group))] # set the name of the dataframe
-=======
-    mainCol = mainColmain[c(unique(piedonut_W_df$prey_group))] # set the name of the dataframe
->>>>>>> a1489b23bc9869f45839436735b8276ce1a0e060
     # print(mainCol)
     df$radius = r1
     df$radius[df$focus != 0] = df$radius[df$focus != 0] + df$focus[df$focus != 0]
