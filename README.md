@@ -2,7 +2,7 @@
 
 Species diet data analyses
 
-## Prey taxa proportions in stomach contents and relative importance in the diet
+## Prey taxa proportions in stomach contents and their relative importance in the diet
 
 ### diet_proportions.R
 diet_proportions.R computes prey taxa and categories frequencies in the stomachs (%F) and their proportions in numbers (%N) and weight (%W) in the stomach contents. It also computes the Index of Relative Importance (IRI)  and its % form (%IRI). The computed index values are exported as a .csv file. The %N, %W and %IRI values are also plotted as pie-donut graphs and exported as .png files. piedonut graphs present in a single plot the proportions of both prey taxa and categories.
