@@ -1,6 +1,6 @@
 # diet_analyses
 
-Species diet data analyses
+Scripts for species diet data analyses.
 
 ## Prey taxa proportions and their relative importance in the diet of a predator
 
