@@ -10,12 +10,12 @@ h <- 15
 w <- 20
 units <- "cm"
 
+data <-read.csv("data.csv")
+
 #Produce a data frame with unique prey taxa and their groups
 taxonomy <- select(data, prey, prey_group)
 taxonomy <- distinct(taxonomy)
 taxonomy <- trim(taxonomy)
-
-data <-read.csv("data.csv")
 
 #%F
 full <- length(unique(data$stomach_id))
@@ -74,7 +74,7 @@ ggplot(costello_mod, aes(F_pc, Pi, colour = prey_group)) +
   theme(text = element_text(size = 20)) +
   scale_color_manual(values = c("Cephalopoda" = "#99D594",
                                 "Decapoda" ="#FEE08B",
-                                "Other Crustacea"="#F46D43",
+                                "Other Crust."="#F46D43",
                                 "Teleostei" = "#3288BD")) 
 dev.off()
 
