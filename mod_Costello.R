@@ -12,11 +12,8 @@ h <- 15
 w <- 20
 units <- "cm"
 
-<<<<<<< HEAD
-=======
 # IMPORT DATA
 
->>>>>>> f670d4688a7210c4635d04e2c06808b38c538b8f
 data <-read.csv("data.csv")
 
 #Produce a data frame with unique prey taxa and their groups
@@ -24,11 +21,8 @@ taxonomy <- select(data, prey, prey_group)
 taxonomy <- distinct(taxonomy)
 taxonomy <- trim(taxonomy)
 
-<<<<<<< HEAD
-=======
 # CALCULATE %F AND Pi
 
->>>>>>> f670d4688a7210c4635d04e2c06808b38c538b8f
 #%F
 full <- length(unique(data$stomach_id))
 F_df <- as.data.frame(table(data['prey']))
@@ -88,7 +82,7 @@ ggplot(costello_mod, aes(F_pc, Pi, colour = prey_group)) +
   theme(text = element_text(size = 20)) +
   scale_color_manual(values = c("Cephalopoda" = "#99D594",
                                 "Decapoda" ="#FEE08B",
-                                "Other Crust."="#F46D43",
+                                "Other Crustacea"="#F46D43",
                                 "Teleostei" = "#3288BD")) 
 dev.off()
 

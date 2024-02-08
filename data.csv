@@ -189,29 +189,29 @@ stomach_id,prey,prey_group,numbers,weight
 2020_43_1,Nat,Decapoda,1,0.07
 2022_52_3,Dec,Decapoda,1,1.43
 2019_64_3,Nat,Decapoda,1,1.987
-2021_34_2,Cru,Other Crust.,30,0.23
-2019_44_5,Cru,Other Crust.,1,0.024
-2020_47_41,Cru,Other Crust.,1,0.19
-2020_59_15,Cru,Other Crust.,1,0.04
-2022_1_11,Cru,Other Crust.,1,0.08
-2019_6_6,Cru,Other Crust.,1,0.07
-2021_33_1,Cru,Other Crust.,1,0.02
-2022_37_9,Cru,Other Crust.,1,0.001
-2022_37_17,Cru,Other Crust.,1,0.001
-2022_42_11,Cru,Other Crust.,1,0.001
-2021_42_4,Cru,Other Crust.,3,0.15
-2019_43_9,Cru,Other Crust.,1,0.011
-2019_43_7,Cru,Other Crust.,1,0.047
-2019_44_4,Cru,Other Crust.,1,0.079
-2022_45_14,Cru,Other Crust.,1,0.07
-2019_51_3,Cru,Other Crust.,1,0.053
-2019_51_4,Cru,Other Crust.,1,0.031
-2020_13_1,Squman,Other Crust.,1,0.4
-2019_13_2,Cru,Other Crust.,1,0.803
-2019_57_3,Cru,Other Crust.,1,1.813
-2019_60_2,Cru,Other Crust.,1,0.175
-2019_60_1,Cru,Other Crust.,1,1.358
-2019_64_3,Cru,Other Crust.,1,0.896
+2021_34_2,Cru,Other Crustacea,30,0.23
+2019_44_5,Cru,Other Crustacea,1,0.024
+2020_47_41,Cru,Other Crustacea,1,0.19
+2020_59_15,Cru,Other Crustacea,1,0.04
+2022_1_11,Cru,Other Crustacea,1,0.08
+2019_6_6,Cru,Other Crustacea,1,0.07
+2021_33_1,Cru,Other Crustacea,1,0.02
+2022_37_9,Cru,Other Crustacea,1,0.001
+2022_37_17,Cru,Other Crustacea,1,0.001
+2022_42_11,Cru,Other Crustacea,1,0.001
+2021_42_4,Cru,Other Crustacea,3,0.15
+2019_43_9,Cru,Other Crustacea,1,0.011
+2019_43_7,Cru,Other Crustacea,1,0.047
+2019_44_4,Cru,Other Crustacea,1,0.079
+2022_45_14,Cru,Other Crustacea,1,0.07
+2019_51_3,Cru,Other Crustacea,1,0.053
+2019_51_4,Cru,Other Crustacea,1,0.031
+2020_13_1,Squman,Other Crustacea,1,0.4
+2019_13_2,Cru,Other Crustacea,1,0.803
+2019_57_3,Cru,Other Crustacea,1,1.813
+2019_60_2,Cru,Other Crustacea,1,0.175
+2019_60_1,Cru,Other Crustacea,1,1.358
+2019_64_3,Cru,Other Crustacea,1,0.896
 2023_14_22,Ost,Teleostei,1,0.02
 2021_37_12,Ost,Teleostei,1,0.06
 2023_43_3,Ost,Teleostei,1,0.55
