@@ -32,7 +32,7 @@ threshold <- 0.01 # Set a threshold prey taxon proportion value for showing labe
 data <-read.csv("data.csv") # Import diet data
 data <- trim(data)
 
-#Produce data frame with unique prey taxa and their groups
+#Produce a data frame with unique prey taxa and their groups
 taxonomy_df <- select(data, prey, prey_group)
 taxonomy_df <- distinct(taxonomy_df)
 
