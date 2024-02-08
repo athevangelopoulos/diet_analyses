@@ -12,4 +12,7 @@ Definition of the pie_donut_full() function that plots the pie-donut graphs. It 
 
 ## Modified Costello graph
 
-The Costello graph as modified by Amudsen et al. (1996) plots prey-specific abundance of prey taxa against their frequency of occurrence in the stomachs with food contents. mod_Costello.R produces and exports in a .png file the modified Costello plot for the input data.
+The Costello graph as modified by Amudsen et al. (1996) plots prey-specific abundance of prey taxa against their frequency of occurrence in the stomachs with food contents.
+
+### mod_Costello.R
+mod_Costello.R produces and exports in a .png file the modified Costello plot for the input data.
