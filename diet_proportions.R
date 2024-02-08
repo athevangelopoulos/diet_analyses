@@ -36,6 +36,8 @@ data <- trim(data)
 taxonomy_df <- select(data, prey, prey_group)
 taxonomy_df <- distinct(taxonomy_df)
 
+write.csv(taxonomy_df, "taxonomy.csv")
+
 stomachs <- length(unique(data$stomach_id)) # Compute number of unique stomachs
 
 # COMPUTE INDICES
