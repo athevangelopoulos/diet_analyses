@@ -11,6 +11,7 @@ library(ggforce)
 library(moonBook)
 library(patchwork)
 library(scales)
+library(webr)
 
 source("pie_donut_full.R") # Load the pie_donut_full() function
 
@@ -70,23 +71,57 @@ write.csv(indices_df, "indices.csv") # Export index values in a .csv file
 
 # PRODUCE PIE-DONUT PLOTS FOR %N, %W and %IRI
 
-# # %N plot
-# piedonut_N_df <- merge(taxonomy_df, N_df, by = "prey", all.y = T)
-# piedonut_N_df <- piedonut_N_df[order(piedonut_N_df$prey_group, decreasing = F), ]
-# # piedonut_N_df$numbers[is.na(piedonut_N_df$numbers)] <- 0
-# png(paste(i, "-", j, "_piedonut_N.png"), height = h, width = w, units = units, res = res)
-# pie_donut_full(piedonut_N_df, aes(prey_group, prey, count = numbers), labelposition = 1, showPieName = F, showDonutName = F, title = "", showRatioThreshold = 0.01, ratioByGroup = F, showRatioDonut = F, showRatioPie = F, palette_name=pal)
-# dev.off()
+# %N plot
+piedonut_N_df <- merge(taxonomy_df, N_df, by = "prey", all.y = T)
+piedonut_N_df <- piedonut_N_df[order(piedonut_N_df$prey_group, decreasing = F), ]
+# piedonut_N_df$numbers[is.na(piedonut_N_df$numbers)] <- 0
+png(
+  "piedonut_N.png",
+  height = h,
+  width = w,
+  units = units,
+  res = res
+)
+pie_donut_full(
+  piedonut_N_df,
+  aes(prey_group, prey, count = numbers),
+  labelposition = 1,
+  showPieName = F,
+  showDonutName = F,
+  title = "%N",
+  showRatioThreshold = 0.01,
+  ratioByGroup = F,
+  showRatioDonut = F,
+  showRatioPie = F
+)
+dev.off()
 
-# # %W plot
-# piedonut_W_df <- merge(taxonomy_df, W_df, by = "prey", all.y = T)
-# piedonut_W_df <- piedonut_W_df[order(piedonut_W_df$prey_group, decreasing = F), ]
-# piedonut_W_df$weight <- piedonut_W_df$weight * 1000
-# piedonut_W_df$weight <- as.integer(piedonut_W_df$weight)
-# # piedonut_W_df$weight[is.na(piedonut_W_df$weight)] <- 0
-# png(paste(i, "-", j, "_piedonut_W.png"), height = h, width = w, units = units, res = res)
-# pie_donut_full(piedonut_W_df, aes(prey_group, prey, count = weight), labelposition = 1, showPieName = F, showDonutName = F, title = "", showRatioThreshold = 0.01, ratioByGroup = F, showRatioDonut = F, showRatioPie = F, palette_name=pal)
-# dev.off()
+# %W plot
+piedonut_W_df <- merge(taxonomy_df, W_df, by = "prey", all.y = T)
+piedonut_W_df <- piedonut_W_df[order(piedonut_W_df$prey_group, decreasing = F), ]
+piedonut_W_df$weight <- piedonut_W_df$weight * 1000
+piedonut_W_df$weight <- as.integer(piedonut_W_df$weight)
+# piedonut_W_df$weight[is.na(piedonut_W_df$weight)] <- 0
+png(
+  "piedonut_W.png",
+  height = h,
+  width = w,
+  units = units,
+  res = res
+)
+pie_donut_full(
+  piedonut_W_df,
+  aes(prey_group, prey, count = weight),
+  labelposition = 1,
+  showPieName = F,
+  showDonutName = F,
+  title = "%W",
+  showRatioThreshold = 0.01,
+  ratioByGroup = F,
+  showRatioDonut = F,
+  showRatioPie = F
+)
+dev.off()
 
 # IRI% plot
 piedonut_IRI_df <-
