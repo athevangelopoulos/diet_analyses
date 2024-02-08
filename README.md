@@ -2,6 +2,10 @@
 
 Scripts for species diet data analyses.
 
+## Imput data format
+
+The input data should have the same format as in the sample data file data.csv. Column headings sould be identical.
+
 ## Prey taxa proportions and their relative importance in the diet of a predator
 
 The proportions of prey taxa in the diet of a predator are typically given as their frequencies in the stomachs (%F) and their proportions in numbers (%N) and weight (%W) in the stomach contents. Prey relative importance is estimated with the Index of Relative Importance (%IRI) that combines the information of the %F, %N and %W indices (Hyslop, 1980).
