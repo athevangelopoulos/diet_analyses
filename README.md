@@ -32,6 +32,8 @@ The Costello graph as modified by Amudsen et al. (1996) plots prey-specific abun
 
 mod_Costello.R produces and exports in a .png file the modified Costello plot for the input data.
 
+![modified Costello plot](/mod_Costello.png "modified Costello plot")
+
 ## References
 
 Amundsen, P.-A., Gabler, H.-M., Staldvik, F.J. (1996) A new method for graphical analysis of feeding strategy from stomach contents data. J. Fish Biol. 48: 607–614.
