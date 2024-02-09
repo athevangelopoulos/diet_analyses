@@ -18,6 +18,8 @@ The proportions of prey taxa in the diet of a predator are typically given as th
 
 diet_proportions.R computes the %F, %N, %W and %IRI indices for the input data and exports indices values as a .csv file. The %N, %W and %IRI values for the prey taxa are also plotted as pie-donut graphs that are exported as .png files. pie-donut graphs present in a single plot the proportions or relative importance in the diet of a predator of the prey taxa (a) individually in the outer "donut" part and (b) aggregated into predefined categories in the inner "pie" part of the plot.
 
+![%N pie-donut plot](/piedonut_N.png "%N pie-donut plot")
+
 ### pie_donut_full.R
 
 Definition of the pie_donut_full() function that plots the pie-donut graphs. It is an adaptation of the version of the function that was posted on [stackoverflow](https://stackoverflow.com/questions/68095243/piedonut-how-to-change-color-of-pie-and-donut) by Amélie Gourdon-Kanhukamwe. In the present version, the colors of prey categories are defined by the user and maintained across plots.
