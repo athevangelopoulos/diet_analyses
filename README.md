@@ -16,7 +16,7 @@ The proportions of prey taxa in the diet of a predator are typically given as th
 
 ### diet_proportions.R
 
-diet_proportions.R computes the %F, %N, %W and %IRI indices for the input data and exports indices values as a .csv file. The %N, %W and %IRI values for the prey taxa are also plotted as pie-donut graphs and exported as .png files. pie-donut graphs present in a single plot the proportions or relative importance in the diet of a predator of the prey taxa (a) individually in the outer "donut" part and (b) aggregated into categories in the inner "pie" part of the plot.
+diet_proportions.R computes the %F, %N, %W and %IRI indices for the input data and exports indices values as a .csv file. The %N, %W and %IRI values for the prey taxa are also plotted as pie-donut graphs and exported as .png files. pie-donut graphs present in a single plot the proportions or relative importance in the diet of a predator of the prey taxa (a) individually in the outer "donut" part and (b) aggregated into predefined categories in the inner "pie" part of the plot.
 
 ### pie_donut_full.R
 
