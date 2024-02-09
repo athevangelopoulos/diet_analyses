@@ -20,7 +20,7 @@ diet_proportions.R computes the %F, %N, %W and %IRI indices for the input data a
 
 ### pie_donut_full.R
 
-Definition of the pie_donut_full() function that plots the pie-donut graphs. It is an adaptation of the [version](https://stackoverflow.com/questions/68095243/piedonut-how-to-change-color-of-pie-and-donut) of the function that was posted on stackoverflow by Amélie Gourdon-Kanhukamwe. In the present version, the colors of prey categories are defined by the user and maintained across plots.
+Definition of the pie_donut_full() function that plots the pie-donut graphs. It is an adaptation of the version of the function that was posted on [stackoverflow](https://stackoverflow.com/questions/68095243/piedonut-how-to-change-color-of-pie-and-donut) by Amélie Gourdon-Kanhukamwe. In the present version, the colors of prey categories are defined by the user and maintained across plots.
 
 ## Modified Costello graph
 
