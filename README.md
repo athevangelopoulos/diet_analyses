@@ -2,7 +2,7 @@
 
 Scripts for species diet data analyses.
 
-## Imput data format
+## Input data format
 
 The input data should have the same format as in the sample data file data.csv. Column headings sould be identical.
 
