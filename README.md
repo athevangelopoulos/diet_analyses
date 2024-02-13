@@ -4,11 +4,11 @@ Scripts for species diet data analyses.
 
 ## Input data format
 
-The input data should have the same format as in the sample data file data.csv. Column headings sould be identical.
+The input data should have the same format as in the sample data file data.csv. Column headings sould be identical. stomach_id column should contain unique IDs that distinguish the stomachs in the analysis.
 
 ### data.csv
 
-Sample data file with the results of a stomach contents analysis. stomach_id column should contain unique IDs that distinguish the stomachs in the analysis.
+Sample data file with the results of a stomach contents analysis.
 
 ## Prey taxa proportions and their relative importance in the diet of a predator
 
